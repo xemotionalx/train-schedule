@@ -1,0 +1,22 @@
+{
+  "name": "train-schedule",
+  "version": "1.0.0",
+  "description": "train scheduler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xemotionalx/train-schedule.git"
+  },
+  "author": "maiada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xemotionalx/train-schedule/issues"
+  },
+  "homepage": "https://github.com/xemotionalx/train-schedule#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
