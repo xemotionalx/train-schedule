@@ -1,0 +1,28 @@
+.header {
+    height: 55vh;
+    background-image: linear-gradient(
+        to top,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)),
+    url(../images/train-header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1rem solid $color-primary-dark;
+
+    &__logo {
+        font-size: 4rem;
+        color: $color-white;
+
+            &-box {
+                position: absolute;
+                top: 4rem;
+                left: 4rem;
+            }
+    }
+    
+    &__text-box {
+        @include absoluteCenter;
+        text-align: center;
+    }
+}

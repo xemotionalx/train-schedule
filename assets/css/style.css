@@ -1,0 +1,105 @@
+/* COLOR */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 0 3rem; }
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7;
+  color: #1b1b1b; }
+
+.heading-primary {
+  color: #fff;
+  font-family: 'Concert One', cursive;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: .5rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .5rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  /*
+        // ^ = starts with 'col'
+        // * = contains 'col'
+        // $ = ends with col
+        */ }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - (6rem * 2)) / 3); }
+  .row .col-2-of-3 {
+    width: calc((2 * (100% - (6rem * 2)) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - (6rem * 3)) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - (6rem * 3)) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - (6rem * 3)) / 4) + (2 * 6rem)); }
+
+.header {
+  height: 55vh;
+  background-image: linear-gradient(to top, rgba(206, 237, 230, 0.85), rgba(48, 144, 173, 0.85)), url(../images/train-header.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 1rem solid #3090AD; }
+  .header__logo {
+    font-size: 4rem;
+    color: #fff; }
+    .header__logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
