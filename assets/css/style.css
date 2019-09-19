@@ -11,7 +11,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  background-color: #ebebeb; }
 
 body {
   font-family: 'Helvetica', sans-serif;
@@ -103,3 +104,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.primary-border {
+  padding: 1rem;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: .3rem;
+  border-bottom: 0.5rem solid #3FCCBB;
+  box-shadow: 0.2 0.4 0.5 rgba(63, 204, 187, 0.4); }

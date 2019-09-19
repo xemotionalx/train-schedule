@@ -1,0 +1,9 @@
+.primary-border {
+    padding: 1rem;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: .3rem;
+    border-bottom: .5rem solid $color-primary;
+    box-shadow: .2 .4 .5 rgba($color-primary, .4);
+}

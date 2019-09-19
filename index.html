@@ -39,67 +39,57 @@
         </div>
     </header>
 
-    <table class="table">
+    <table class="table primary-border">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Train</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row">Midnight Train</th>
+            <td>Anywhere</td>
+            <td>1440</td>
+            <td>00:00 AM</td>
+            <td>24</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <th scope="row">Polar Express</th>
+            <td>North Pole</td>
+            <td>60</td>
+            <td>6:40 PM</td>
+            <td>24</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <th scope="row">Thomas the Tank Engine</th>
+            <td>Sodor</td>
+            <td>10</td>
+            <td>5:50 PM</td>
+            <td>24</td>
           </tr>
         </tbody>
       </table>
       
-      <table class="table">
-        <thead class="thead-light">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      <form class="primary-border form-group">
+          Train Time
+        <input class="form-control" type="text">
+
+        Destination
+        <input class="form-control" type="text">
+
+        First Train Time
+        <input class="form-control" type="text">
+
+        Frequency (min)
+        <input class="form-control" type="text">
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
       
     
 </body>
