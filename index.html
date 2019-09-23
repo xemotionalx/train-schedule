@@ -12,16 +12,22 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- JQUERY & JS-->
+    <!-- FIREBASE -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <!-- MOMENT.JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- JQUERY-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/3f7d57fead.js"></script>
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header class="header">
@@ -39,7 +45,7 @@
         </div>
     </header>
 
-    <table class="table primary-border">
+    <table class="table primary-border" id="train-schedule">
         <thead class="thead-dark">
           <tr>
             <th scope="col">Train</th>
@@ -50,47 +56,26 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">Midnight Train</th>
-            <td>Anywhere</td>
-            <td>1440</td>
-            <td>00:00 AM</td>
-            <td>24</td>
-          </tr>
-          <tr>
-            <th scope="row">Polar Express</th>
-            <td>North Pole</td>
-            <td>60</td>
-            <td>6:40 PM</td>
-            <td>24</td>
-          </tr>
-          <tr>
-            <th scope="row">Thomas the Tank Engine</th>
-            <td>Sodor</td>
-            <td>10</td>
-            <td>5:50 PM</td>
-            <td>24</td>
-          </tr>
         </tbody>
       </table>
       
       <form class="primary-border form-group">
           Train Time
-        <input class="form-control" type="text">
+        <input class="form-control" type="text" id="train">
 
         Destination
-        <input class="form-control" type="text">
+        <input class="form-control" type="text" id="destination">
 
         First Train Time
-        <input class="form-control" type="text">
+        <input class="form-control" type="text" id="first-train">
 
         Frequency (min)
-        <input class="form-control" type="text">
+        <input class="form-control" type="text" id="frequency">
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
       </form>
     
       
-    
+<script src="assets/js/script.js"></script>
 </body>
 </html>
